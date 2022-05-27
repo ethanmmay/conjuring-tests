@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="PageObjects\BasementPageObject.cs" />
+    <Compile Remove="PageObjects\BedroomPageObject.cs" />
+    <Compile Remove="PageObjects\HomePageObject.cs" />
+    <Compile Remove="PageObjects\OutsidePageObject.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
     <PackageReference Include="SpecFlow.xUnit" Version="3.9.40" />
@@ -18,6 +25,13 @@
   <ItemGroup>
     <Folder Include="Drivers\" />
     <Folder Include="Support\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="PageObjects\BasementPageObject.cs" />
+    <None Include="PageObjects\BedroomPageObject.cs" />
+    <None Include="PageObjects\HomePageObject.cs" />
+    <None Include="PageObjects\OutsidePageObject.cs" />
   </ItemGroup>
 
 </Project>

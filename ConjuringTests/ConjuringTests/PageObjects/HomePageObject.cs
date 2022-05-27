@@ -15,8 +15,10 @@ public class HomePage {
     }
 
     public string getMessageText() { 
-        return driver.findElement()
+        return driver.findElement(messageBy).getText();
     }
 
-
+    public HomePage manageProfile() { 
+        return new HomePage(driver);
+    }
 }

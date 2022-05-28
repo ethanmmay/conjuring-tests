@@ -1,24 +1,33 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+namespace ConjuringTests.Specs.Pages
+{
+
+
+
+
 public class HomePage {
     protected WebDriver driver;
 
     private By messageBy = By.tagName("h1");
 
-    public HomePage(WebDriver driver) { 
+    public HomePage(WebDriver driver) {
         this.driver = driver;
-        if (!driver.getTitle().equals("Ethan's Testing Site")) { 
+        if (!driver.getTitle().equals("Ethan's Testing Site")) {
             throw new IllegalStateException("This is not Home Page of logged in user," +
                     " current page is: " + driver.getCurrentUrl());
         }
     }
 
-    public string getMessageText() { 
+    public string getMessageText() {
         return driver.findElement(messageBy).getText();
     }
 
-    public HomePage manageProfile() { 
+    public HomePage manageProfile() {
         return new HomePage(driver);
     }
+}
+
+
 }

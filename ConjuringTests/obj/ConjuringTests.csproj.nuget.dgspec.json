@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests\\ConjuringTests.csproj": {}
+    "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests\\ConjuringTests.csproj": {
+    "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests\\ConjuringTests.csproj",
+        "projectUniqueName": "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests.csproj",
         "projectName": "ConjuringTests",
-        "projectPath": "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests\\ConjuringTests.csproj",
+        "projectPath": "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests.csproj",
         "packagesPath": "C:\\Users\\Ethan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests\\obj\\",
+        "outputPath": "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ethan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,11 +42,23 @@
           "dependencies": {
             "FluentAssertions": {
               "target": "Package",
-              "version": "[6.2.0, )"
+              "version": "[6.7.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.0.0, )"
+              "version": "[17.2.0, )"
+            },
+            "OpenQA.Selenium.Chrome.ChromeDriverExtensions": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[102.0.5005.6102, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.74, )"
             },
             "SpecFlow.Plus.LivingDocPlugin": {
               "target": "Package",
@@ -54,15 +66,25 @@
             },
             "SpecFlow.xUnit": {
               "target": "Package",
-              "version": "[3.9.40, )"
+              "version": "[3.9.74, )"
+            },
+            "SpecRun.SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.31, )"
+            },
+            "WebDriverManager": {
+              "target": "Package",
+              "version": "[2.13.0, )"
             },
             "xunit": {
               "target": "Package",
               "version": "[2.4.1, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.3, )"
+              "version": "[2.4.5, )"
             }
           },
           "imports": [

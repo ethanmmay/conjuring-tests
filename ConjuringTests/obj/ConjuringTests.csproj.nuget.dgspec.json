@@ -48,18 +48,6 @@
               "target": "Package",
               "version": "[17.2.0, )"
             },
-            "OpenQA.Selenium.Chrome.ChromeDriverExtensions": {
-              "target": "Package",
-              "version": "[1.2.0, )"
-            },
-            "OpenQA.Selenium.Winium": {
-              "target": "Package",
-              "version": "[1.0.0.4, )"
-            },
-            "Selenium.Essentials": {
-              "target": "Package",
-              "version": "[1.0.5.8, )"
-            },
             "Selenium.Support": {
               "target": "Package",
               "version": "[4.2.0, )"
@@ -83,10 +71,6 @@
             "SpecFlow.xUnit": {
               "target": "Package",
               "version": "[3.9.74, )"
-            },
-            "SpecRun.SpecFlow": {
-              "target": "Package",
-              "version": "[3.9.31, )"
             },
             "WebDriverManager": {
               "target": "Package",

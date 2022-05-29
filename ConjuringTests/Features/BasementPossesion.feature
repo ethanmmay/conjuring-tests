@@ -1,10 +1,12 @@
 ﻿Feature: BasementPossesion
 
-Go to Basement while Possessed
+Go to Basement while Possessed, Scroll Down and Click on Piano Image, then Click Ok on Alert
 
-@navBasement
-Scenario: Navigate to Basement Page while Possessed
+@testBasement
+Scenario: Test Basement Page while Possessed
 	Given I am on conjuring site
 	When I click possession
 	When I click Basement
-	Then the result page should have link `https://ethanmmay.github.io/conjuring-site/basement-b`
+	When I scroll down
+	When I click on the piano
+	Then the piano alert appears

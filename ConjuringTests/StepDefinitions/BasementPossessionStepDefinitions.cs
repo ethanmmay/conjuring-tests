@@ -6,10 +6,12 @@ namespace ConjuringTests.StepDefinitions
     public class BasementPossessionStepDefinitions
     {
         private readonly HomePageObject _homePageObject;
+        private readonly BasementPageObject _basementPageObject;
 
         public BasementPossessionStepDefinitions(BrowserDriver browserDriver)
         {
             _homePageObject = new HomePageObject(browserDriver.Current);
+            _basementPageObject = new BasementPageObject(browserDriver.Current);
         }
 
         //private readonly BasementPossession _basementPossession = new BasementPossession();
@@ -31,10 +33,22 @@ namespace ConjuringTests.StepDefinitions
             _homePageObject.NavigateToBasement();
         }
 
-        [Then(@"the result page should have link `https://ethanmmay.github.io/conjuring-site/basement-b`")]
-        public void ResultsPageHasBasementLink()
+        [When(@"I scroll down")]
+        public void WhenIScrollDown()
         {
-            _homePageObject.VerifyAtBasement();
+            _basementPageObject.ScrollDown();
+        }
+
+        [When(@"I click on the piano")]
+        public void WhenIClickOnThePiano()
+        {
+            _basementPageObject.ClickPiano();
+        }
+
+        [Then(@"the piano alert appears")]
+        public void ThenThePianoAlertAppears()
+        {
+            _basementPageObject.VerifyPianoAlertAppears();
         }
     }
 }

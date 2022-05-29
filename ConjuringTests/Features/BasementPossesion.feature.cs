@@ -40,7 +40,8 @@ namespace ConjuringTests.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "BasementPossesion", "Go to Basement while Possessed", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "BasementPossesion", "Go to Basement while Possessed, Scroll Down and Click on Piano Image, then Click " +
+                    "Ok on Alert", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,16 +81,16 @@ namespace ConjuringTests.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Navigate to Basement Page while Possessed")]
+        [Xunit.SkippableFactAttribute(DisplayName="Test Basement Page while Possessed")]
         [Xunit.TraitAttribute("FeatureTitle", "BasementPossesion")]
-        [Xunit.TraitAttribute("Description", "Navigate to Basement Page while Possessed")]
-        [Xunit.TraitAttribute("Category", "navBasement")]
-        public void NavigateToBasementPageWhilePossessed()
+        [Xunit.TraitAttribute("Description", "Test Basement Page while Possessed")]
+        [Xunit.TraitAttribute("Category", "testBasement")]
+        public void TestBasementPageWhilePossessed()
         {
             string[] tagsOfScenario = new string[] {
-                    "navBasement"};
+                    "testBasement"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to Basement Page while Possessed", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Basement Page while Possessed", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -110,8 +111,13 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I click Basement", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
- testRunner.Then("the result page should have link `https://ethanmmay.github.io/conjuring-site/base" +
-                        "ment-b`", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I scroll down", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 11
+ testRunner.When("I click on the piano", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 12
+ testRunner.Then("the piano alert appears", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -52,6 +52,22 @@
               "target": "Package",
               "version": "[1.2.0, )"
             },
+            "OpenQA.Selenium.Winium": {
+              "target": "Package",
+              "version": "[1.0.0.4, )"
+            },
+            "Selenium.Essentials": {
+              "target": "Package",
+              "version": "[1.0.5.8, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[102.0.5005.6102, )"

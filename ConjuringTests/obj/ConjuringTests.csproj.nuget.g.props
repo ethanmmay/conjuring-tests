@@ -27,7 +27,6 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgValidation Condition=" '$(PkgValidation)' == '' ">C:\Users\Ethan\.nuget\packages\validation\2.4.18</PkgValidation>
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\Ethan\.nuget\packages\xunit.analyzers\0.10.0</Pkgxunit_analyzers>
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\Ethan\.nuget\packages\newtonsoft.json\10.0.3</PkgNewtonsoft_Json>
     <PkgSpecRun_Runner Condition=" '$(PkgSpecRun_Runner)' == '' ">C:\Users\Ethan\.nuget\packages\specrun.runner\3.9.31</PkgSpecRun_Runner>
     <PkgBoDi Condition=" '$(PkgBoDi)' == '' ">C:\Users\Ethan\.nuget\packages\bodi\1.5.0</PkgBoDi>
   </PropertyGroup>

@@ -24,11 +24,13 @@ namespace ConjuringTests.Pages
         private IWebElement wardrobe => _webDriver.FindElement(By.ClassName("wardrobeImage"));
         private IWebElement weightInput => _webDriver.FindElement(By.Id("weightFormInput"));
         private IWebElement submitButton => _webDriver.FindElement(By.Id("weightFormButton"));
-        //private IWebElement 
+        private IWebElement bedroomButton => _webDriver.FindElement(By.LinkText("Bedroom"));
 
         public void ClickWardrobeAndAlert()
         {
+            Thread.Sleep(1000);
             wardrobe.Click();
+            Thread.Sleep(1000);
             _webDriver.SwitchTo().Alert().Accept();
         }
 
@@ -36,12 +38,22 @@ namespace ConjuringTests.Pages
         {
             weightInput.Clear();
             weightInput.SendKeys(weight.ToString());
+            Thread.Sleep(3000);
             submitButton.Click();
         }
 
         public void RepeatStepsAndEnterHighWeight(int weight)
         {
-
+            Thread.Sleep(1000);
+            bedroomButton.Click();
+            wardrobe.Click();
+            Thread.Sleep(500);
+            _webDriver.SwitchTo().Alert().Accept();
+            weightInput.Clear();
+            weightInput.SendKeys(weight.ToString());
+            Thread.Sleep(1000);
+            submitButton.Click();
+            Thread.Sleep(3000);
         }
 
 

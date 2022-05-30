@@ -19,7 +19,7 @@ namespace ConjuringTests.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class BasementPossessionFeature : object, Xunit.IClassFixture<BasementPossessionFeature.FixtureData>, System.IDisposable
+    public partial class BedroomUnpossessedFeature : object, Xunit.IClassFixture<BedroomUnpossessedFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace ConjuringTests.Features
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "BasementPossession.feature"
+#line 1 "BedroomUnpossessed.feature"
 #line hidden
         
-        public BasementPossessionFeature(BasementPossessionFeature.FixtureData fixtureData, ConjuringTests_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public BedroomUnpossessedFeature(BedroomUnpossessedFeature.FixtureData fixtureData, ConjuringTests_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,8 +40,8 @@ namespace ConjuringTests.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "BasementPossession", "Go to Basement while Possessed, Scroll Down and Click on Piano Image, then Click " +
-                    "Ok on Alert", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "BedroomUnpossessed", "Go to Bedroom while unpossessed, click wardrobe, accept alert, enter weight, repe" +
+                    "at", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -81,16 +81,16 @@ namespace ConjuringTests.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Test Basement Page while Possessed")]
-        [Xunit.TraitAttribute("FeatureTitle", "BasementPossession")]
-        [Xunit.TraitAttribute("Description", "Test Basement Page while Possessed")]
-        [Xunit.TraitAttribute("Category", "testBasement")]
-        public void TestBasementPageWhilePossessed()
+        [Xunit.SkippableFactAttribute(DisplayName="Test Bedroom while Unpossessed")]
+        [Xunit.TraitAttribute("FeatureTitle", "BedroomUnpossessed")]
+        [Xunit.TraitAttribute("Description", "Test Bedroom while Unpossessed")]
+        [Xunit.TraitAttribute("Category", "testBedroomG")]
+        public void TestBedroomWhileUnpossessed()
         {
             string[] tagsOfScenario = new string[] {
-                    "testBasement"};
+                    "testBedroomG"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Basement Page while Possessed", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Bedroom while Unpossessed", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -102,22 +102,22 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 7
- testRunner.Given("I am on conjuring site going towards Basement", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on conjuring site going towards BedroomG", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
- testRunner.When("I click possession for going to Basement", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click BedroomG", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
- testRunner.When("I click Basement", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click on wardrobe and alert", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
- testRunner.When("I scroll down", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I enter low weight and submit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.When("I click on the piano", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I repeat steps and enter high weight", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 12
- testRunner.Then("the piano alert appears", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I fall through the house", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -130,12 +130,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                BasementPossessionFeature.FeatureSetup();
+                BedroomUnpossessedFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                BasementPossessionFeature.FeatureTearDown();
+                BedroomUnpossessedFeature.FeatureTearDown();
             }
         }
     }

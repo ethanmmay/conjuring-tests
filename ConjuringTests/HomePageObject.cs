@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConjuringTests.Drivers;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
 
 namespace ConjuringTests.Pages
 {
     public class HomePageObject
     {
         private const string HomePageUrl = "https://ethanmmay.github.io/conjuring-site";
-        private const string BasementUrl = "https://ethanmmay.github.io/conjuring-site/basement-b";
 
         private readonly IWebDriver _webDriver;
 
@@ -23,10 +15,10 @@ namespace ConjuringTests.Pages
             _webDriver = webDriver;
         }
 
-        private string CurrentLocation => _webDriver.Url;
         private IWebElement PossessionButton => _webDriver.FindElement(By.ClassName("possessButton"));
         private IWebElement BasementLink => _webDriver.FindElement(By.LinkText("Basement"));
         private IWebElement OutsideLink => _webDriver.FindElement(By.LinkText("Outside"));
+        private IWebElement BedroomLink => _webDriver.FindElement(By.LinkText("Bedroom"));
 
         public void VerifyAtHomePage()
         {
@@ -51,27 +43,14 @@ namespace ConjuringTests.Pages
             OutsideLink.Click();
         }
 
-        public void VerifyAtBasement()
+        public void NavigateToBedroomG()
         {
-            if (_webDriver.Url != BasementUrl)
-            {
-                _webDriver.Url = BasementUrl;
-            }
+            BedroomLink.Click();
         }
 
-        private T WaitUntil<T>(Func<T> getResult, Func<T, bool> isResultAccepted) where T : class
+        public void NavigateToBedroomB()
         {
-            var wait = new WebDriverWait(_webDriver, TimeSpan.FromSeconds(DefaultWaitInSeconds));
-#pragma warning disable CS8603 // Possible null reference return.
-            return wait.Until(driver =>
-            {
-                var result = getResult();
-                if (!isResultAccepted(result))
-                    return default;
-
-                return result;
-            });
-#pragma warning restore CS8603 // Possible null reference return.
+            BedroomLink.Click();
         }
     }
 }

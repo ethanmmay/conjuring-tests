@@ -14,14 +14,13 @@ namespace ConjuringTests.StepDefinitions
             _basementPageObject = new BasementPageObject(browserDriver.Current);
         }
 
-        //private readonly BasementPossession _basementPossession = new BasementPossession();
-        [Given(@"I am on conjuring site")]
+        [Given(@"I am on conjuring site going towards Basement")]
         public void GivenIAmOnConjuringSite()
         {
             _homePageObject.VerifyAtHomePage();
         }
 
-        [When(@"I click possession")]
+        [When(@"I click possession for going to Basement")]
         public void WhenIClickPossesion()
         {
             _homePageObject.ClickPossessionButton();

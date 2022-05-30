@@ -19,7 +19,7 @@ namespace ConjuringTests.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class BasementPossesionFeature : object, Xunit.IClassFixture<BasementPossesionFeature.FixtureData>, System.IDisposable
+    public partial class BasementPossessionFeature : object, Xunit.IClassFixture<BasementPossessionFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace ConjuringTests.Features
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "BasementPossesion.feature"
+#line 1 "BasementPossession.feature"
 #line hidden
         
-        public BasementPossesionFeature(BasementPossesionFeature.FixtureData fixtureData, ConjuringTests_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public BasementPossessionFeature(BasementPossessionFeature.FixtureData fixtureData, ConjuringTests_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,7 +40,7 @@ namespace ConjuringTests.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "BasementPossesion", "Go to Basement while Possessed, Scroll Down and Click on Piano Image, then Click " +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "BasementPossession", "Go to Basement while Possessed, Scroll Down and Click on Piano Image, then Click " +
                     "Ok on Alert", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -82,7 +82,7 @@ namespace ConjuringTests.Features
         }
         
         [Xunit.SkippableFactAttribute(DisplayName="Test Basement Page while Possessed")]
-        [Xunit.TraitAttribute("FeatureTitle", "BasementPossesion")]
+        [Xunit.TraitAttribute("FeatureTitle", "BasementPossession")]
         [Xunit.TraitAttribute("Description", "Test Basement Page while Possessed")]
         [Xunit.TraitAttribute("Category", "testBasement")]
         public void TestBasementPageWhilePossessed()
@@ -130,12 +130,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                BasementPossesionFeature.FeatureSetup();
+                BasementPossessionFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                BasementPossesionFeature.FeatureTearDown();
+                BasementPossessionFeature.FeatureTearDown();
             }
         }
     }

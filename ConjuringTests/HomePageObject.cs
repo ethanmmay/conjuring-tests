@@ -26,6 +26,7 @@ namespace ConjuringTests.Pages
         private string CurrentLocation => _webDriver.Url;
         private IWebElement PossessionButton => _webDriver.FindElement(By.ClassName("possessButton"));
         private IWebElement BasementLink => _webDriver.FindElement(By.LinkText("Basement"));
+        private IWebElement OutsideLink => _webDriver.FindElement(By.LinkText("Outside"));
 
         public void VerifyAtHomePage()
         {
@@ -43,6 +44,11 @@ namespace ConjuringTests.Pages
         public void NavigateToBasement()
         {
             BasementLink.Click();
+        }
+
+        public void NavigateToOutside()
+        {
+            OutsideLink.Click();
         }
 
         public void VerifyAtBasement()

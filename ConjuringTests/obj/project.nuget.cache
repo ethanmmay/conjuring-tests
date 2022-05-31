@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ejT0y7FQ8ml6AQ24RDeN+YoKA9JDS2IEAGsPlQGGpjR5x45LYD7G7nQztt05UCeQL8stwVNHYTy18kttc+4G5w==",
+  "dgSpecHash": "7y2YAVZGj0v62akwOLqRH7hPq9WrLEUbB9O7CjjS3SmgbFhyBEflIp1yX0ZKja2okf9bVGZpPCpU3vGKk7C3vg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests.csproj",
   "expectedPackageFiles": [
@@ -40,6 +40,7 @@
     "C:\\Users\\Ethan\\.nuget\\packages\\selenium.support\\4.2.0\\selenium.support.4.2.0.nupkg.sha512",
     "C:\\Users\\Ethan\\.nuget\\packages\\selenium.webdriver\\4.2.0\\selenium.webdriver.4.2.0.nupkg.sha512",
     "C:\\Users\\Ethan\\.nuget\\packages\\selenium.webdriver.chromedriver\\102.0.5005.6102\\selenium.webdriver.chromedriver.102.0.5005.6102.nupkg.sha512",
+    "C:\\Users\\Ethan\\.nuget\\packages\\selenium.webdriver.iedriver\\4.2.0\\selenium.webdriver.iedriver.4.2.0.nupkg.sha512",
     "C:\\Users\\Ethan\\.nuget\\packages\\sharpziplib\\1.3.3\\sharpziplib.1.3.3.nupkg.sha512",
     "C:\\Users\\Ethan\\.nuget\\packages\\specflow\\3.9.74\\specflow.3.9.74.nupkg.sha512",
     "C:\\Users\\Ethan\\.nuget\\packages\\specflow.internal.json\\1.0.8\\specflow.internal.json.1.0.8.nupkg.sha512",

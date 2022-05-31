@@ -28,13 +28,13 @@ namespace ConjuringTests.Drivers
         /// <returns></returns>
         private IWebDriver CreateWebDriver()
         {
+           
             //We use the Chrome browser
             var chromeDriverService = ChromeDriverService.CreateDefaultService();
 
             var chromeOptions = new ChromeOptions();
 
             var chromeDriver = new ChromeDriver(chromeDriverService, chromeOptions);
-
             return chromeDriver;
         }
 

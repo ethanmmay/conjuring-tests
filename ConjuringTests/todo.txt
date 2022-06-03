@@ -14,12 +14,12 @@ More interesting tests that show cool widgets being tested
 
 i. Convert hard waits (Thread.Sleep()) to deterministic waits (ImplicitlyWait())
 ii. Move String literals to a new defined constants file
-iii. Create a URL util for storing less data within classes
-iv. Remove "global" from using imports
-v. Optimize RaiseAndLowerSlider()
+iii. Remove "global" from using imports
+iv. Optimize RaiseAndLowerSlider()
 
 
 ~~ Completed Tasks ~~
 
 i. Move Assertions to tests themselves instead of buried in methods (PageObjects)
 ii. Delete "object" from PageObject instance names
+iii. Create a URL util for storing less data within classes

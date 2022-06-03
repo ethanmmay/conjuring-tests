@@ -43,9 +43,9 @@ namespace ConjuringTests.Pages
             }
         }
 
-        public void Verify20CrowsClicked()
+        public String GetCrowCount()
         {
-            crowCounter.Text.Should().Be("20");
+            return crowCounter.Text;
         }
     }
 }

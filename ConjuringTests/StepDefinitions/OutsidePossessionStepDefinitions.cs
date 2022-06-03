@@ -41,7 +41,8 @@ namespace ConjuringTests.StepDefinitions
         [Then(@"the crows possessed is 20")]
         public void ThenTheCrowsPossessedIs20()
         {
-            _outsidePageObject.Verify20CrowsClicked();
+            String crowCount = _outsidePageObject.GetCrowCount();
+            crowCount.Should().Be("20");
         }
     }
 }

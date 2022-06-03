@@ -16,7 +16,7 @@ i. Convert hard waits (Thread.Sleep()) to deterministic waits (ImplicitlyWait())
 ii. Move String literals to a new defined constants file
 iii. Remove "global" from using imports
 iv. Optimize RaiseAndLowerSlider()
-
+v. Verify page url using URLUtil when entering Bedroom or Basement pages
 
 ~~ Completed Tasks ~~
 

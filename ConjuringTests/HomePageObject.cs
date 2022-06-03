@@ -1,10 +1,11 @@
 ﻿using OpenQA.Selenium;
+using ConjuringTests.URLUtil;
 
 namespace ConjuringTests.Pages
 {
     public class HomePageObject
     {
-        private const string HomePageUrl = "https://ethanmmay.github.io/conjuring-site";
+        private string _homepageURL = CreatePath("");
 
         private readonly IWebDriver _webDriver;
 

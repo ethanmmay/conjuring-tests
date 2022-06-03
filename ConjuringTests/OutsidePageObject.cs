@@ -1,10 +1,11 @@
 using OpenQA.Selenium;
+using ConjuringTests.URLUtil;
 
 namespace ConjuringTests.Pages
 {
     public class OutsidePageObject
     {
-        private const string OutsideUrl = "https://ethanmmay.github.io/conjuring-site/outside-b";
+        private string _outsideURL = CreatePath("outside-b.html");
 
         private readonly IWebDriver _webDriver;
 
@@ -18,9 +19,9 @@ namespace ConjuringTests.Pages
 
         public void VerifyAtOutsidePage()
         {
-            if (_webDriver.Url != OutsideUrl)
+            if (_webDriver.Url != _outsideURL)
             {
-                _webDriver.Url = OutsideUrl;
+                _webDriver.Url = _outsideURL;
             }
         }
 

@@ -36,10 +36,9 @@ namespace ConjuringTests.Pages
             }
         }
 
-        public void VerifySliderIsAt0()
+        public String GetSliderValue()
         {
-            string value = slider.GetAttribute("value");
-            value.Should().Be("0");
+            return slider.GetAttribute("value");
         }
     }
 }

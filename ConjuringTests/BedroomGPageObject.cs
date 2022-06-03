@@ -1,20 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConjuringTests.Drivers;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium.Interactions;
 
 namespace ConjuringTests.Pages
 {
     public class BedroomGPageObject
     {
         private readonly IWebDriver _webDriver;
-
-        public const int DefaultWaitInSeconds = 5;
 
         public BedroomGPageObject(IWebDriver webDriver)
         {
@@ -25,7 +15,7 @@ namespace ConjuringTests.Pages
         private IWebElement weightInput => _webDriver.FindElement(By.Id("weightFormInput"));
         private IWebElement submitButton => _webDriver.FindElement(By.Id("weightFormButton"));
         private IWebElement bedroomButton => _webDriver.FindElement(By.LinkText("Bedroom"));
-
+        private IWebElement resultsText => _webDriver.FindElement(By.ClassName("text-danger"));
         public void ClickWardrobeAndAlert()
         {
             Thread.Sleep(1000);
@@ -56,8 +46,9 @@ namespace ConjuringTests.Pages
             Thread.Sleep(3000);
         }
 
-
-
-
+        public String GetWeightFormResultsText()
+        {
+            return resultsText.Text;
+        }
     }
 }

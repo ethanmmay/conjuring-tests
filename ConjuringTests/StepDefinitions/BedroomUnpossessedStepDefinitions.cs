@@ -47,7 +47,8 @@ namespace ConjuringTests.StepDefinitions
         [Then(@"I fall through the house")]
         public void ThenIFallThroughTheHouse()
         {
-            //_bedroomGPageObject.VerifyFallThroughHouse();
+            String resultsText = _bedroomGPageObject.GetWeightFormResultsText();
+            resultsText.Should().Contain("Suddenly ");
         }
     }
 }

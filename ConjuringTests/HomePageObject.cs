@@ -8,8 +8,6 @@ namespace ConjuringTests.Pages
 
         private readonly IWebDriver _webDriver;
 
-        public const int DefaultWaitInSeconds = 5;
-
         public HomePageObject(IWebDriver webDriver)
         {
             _webDriver = webDriver;

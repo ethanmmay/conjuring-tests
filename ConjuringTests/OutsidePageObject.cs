@@ -1,12 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConjuringTests.Drivers;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium.Interactions;
 
 namespace ConjuringTests.Pages
 {
@@ -15,8 +7,6 @@ namespace ConjuringTests.Pages
         private const string OutsideUrl = "https://ethanmmay.github.io/conjuring-site/outside-b";
 
         private readonly IWebDriver _webDriver;
-
-        public const int DefaultWaitInSeconds = 5;
 
         public OutsidePageObject(IWebDriver webDriver)
         {

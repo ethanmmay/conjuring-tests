@@ -13,9 +13,13 @@ More interesting tests that show cool widgets being tested
 ~~ Tasks ~~
 
 i. Convert hard waits (Thread.Sleep()) to deterministic waits (ImplicitlyWait())
-ii. Move Assertions to tests themselves instead of buried in methods (PageObjects)
-iii. Move String literals to a new defined constants file
-iv. Create a URL util for storing less data within classes
-v. Remove "global" from using imports
-vi. Optimize RaiseAndLowerSlider()
-vii. Delete "object" from PageObject instance names
+ii. Move String literals to a new defined constants file
+iii. Create a URL util for storing less data within classes
+iv. Remove "global" from using imports
+v. Optimize RaiseAndLowerSlider()
+
+
+~~ Completed Tasks ~~
+
+i. Move Assertions to tests themselves instead of buried in methods (PageObjects)
+ii. Delete "object" from PageObject instance names

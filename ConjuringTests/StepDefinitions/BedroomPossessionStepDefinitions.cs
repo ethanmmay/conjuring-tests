@@ -5,45 +5,45 @@ namespace ConjuringTests.StepDefinitions
     [Binding]
     public class BedroomPossessionStepDefinitions
     {
-        private readonly HomePageObject _homePageObject;
-        private readonly BedroomBPageObject _bedroomBPageObject;
+        private readonly HomePageObject _homePage;
+        private readonly BedroomBPageObject _bedroomBPage;
 
         public BedroomPossessionStepDefinitions(BrowserDriver browserDriver)
         {
-            _homePageObject = new HomePageObject(browserDriver.Current);
-            _bedroomBPageObject = new BedroomBPageObject(browserDriver.Current);
+            _homePage = new HomePageObject(browserDriver.Current);
+            _bedroomBPage = new BedroomBPageObject(browserDriver.Current);
         }
 
         [Given(@"I am on conjuring site going towards BedroomB")]
         public void GivenIAmOnConjuringSite3()
         {
-            _homePageObject.VerifyAtHomePage();
+            _homePage.VerifyAtHomePage();
         }
 
         [When(@"I click possession for going to BedroomB")]
         public void WhenIClickPossesion3()
         {
-            _homePageObject.ClickPossessionButton();
+            _homePage.ClickPossessionButton();
         }
 
         [When(@"I click BedroomB")]
         public void WhenIClickBedroomB()
         {
-            _homePageObject.NavigateToBedroomB();
+            _homePage.NavigateToBedroomB();
         }
 
         [When(@"I raise and lower slider 3 times")]
         public void WhenIRaiseAndLowerSlider3Times()
         {
-            _bedroomBPageObject.RaiseAndLowerSlider();
-            _bedroomBPageObject.RaiseAndLowerSlider();
-            _bedroomBPageObject.RaiseAndLowerSlider();
+            _bedroomBPage.RaiseAndLowerSlider();
+            _bedroomBPage.RaiseAndLowerSlider();
+            _bedroomBPage.RaiseAndLowerSlider();
         }
 
         [Then(@"the slider is back at 0")]
         public void ThenTheSliderIsBackAt0()
         {
-            String sliderValue = _bedroomBPageObject.GetSliderValue();
+            String sliderValue = _bedroomBPage.GetSliderValue();
             sliderValue.Should().Be("0");
         }
 

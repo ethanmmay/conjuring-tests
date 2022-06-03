@@ -5,49 +5,49 @@ namespace ConjuringTests.StepDefinitions
     [Binding]
     public class BedroomUnpossessedStepDefinitions
     {
-        private readonly HomePageObject _homePageObject;
-        private readonly BedroomGPageObject _bedroomGPageObject;
+        private readonly HomePageObject _homePage;
+        private readonly BedroomGPageObject _bedroomGPage;
 
         public BedroomUnpossessedStepDefinitions(BrowserDriver browserDriver)
         {
-            _homePageObject = new HomePageObject(browserDriver.Current);
-            _bedroomGPageObject = new BedroomGPageObject(browserDriver.Current);
+            _homePage = new HomePageObject(browserDriver.Current);
+            _bedroomGPage = new BedroomGPageObject(browserDriver.Current);
         }
 
         [Given(@"I am on conjuring site going towards BedroomG")]
         public void GivenIAmOnConjuringSite3()
         {
-            _homePageObject.VerifyAtHomePage();
+            _homePage.VerifyAtHomePage();
         }
 
         [When(@"I click BedroomG")]
         public void WhenIClickBedroomG()
         {
-            _homePageObject.NavigateToBedroomG();
+            _homePage.NavigateToBedroomG();
         }
 
         [When(@"I click on wardrobe and alert")]
         public void WhenIClickOnWardrobeAndAlert()
         {
-            _bedroomGPageObject.ClickWardrobeAndAlert();
+            _bedroomGPage.ClickWardrobeAndAlert();
         }
 
         [When(@"I enter low weight and submit")]
         public void WhenIEnterLowWeightAndSubmit()
         {
-            _bedroomGPageObject.EnterWeightAndSubmit(80);
+            _bedroomGPage.EnterWeightAndSubmit(80);
         }
 
         [When(@"I repeat steps and enter high weight")]
         public void WhenIRepeatStepsAndEnterHighWeight()
         {
-            _bedroomGPageObject.RepeatStepsAndEnterHighWeight(120);
+            _bedroomGPage.RepeatStepsAndEnterHighWeight(120);
         }
 
         [Then(@"I fall through the house")]
         public void ThenIFallThroughTheHouse()
         {
-            String resultsText = _bedroomGPageObject.GetWeightFormResultsText();
+            String resultsText = _bedroomGPage.GetWeightFormResultsText();
             resultsText.Should().Contain("Suddenly ");
         }
     }

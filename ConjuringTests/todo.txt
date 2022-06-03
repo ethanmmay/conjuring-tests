@@ -1,7 +1,7 @@
 ~~ Core Goals ~~
 
 Create Components for elements
-Clean Up & Comment Code
+Clean Up & Comment Code (Commented for first time on 6/3/2022)
 
 
 ~~ Abstract Goals ~~

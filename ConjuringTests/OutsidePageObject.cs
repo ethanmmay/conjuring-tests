@@ -6,7 +6,7 @@ namespace ConjuringTests.Pages
     public class OutsidePageObject
     {
         // Builds the expected URL for the testing site's Outside page
-        private string _outsideURL = CreatePath("outside-b.html");
+        private string _outsideURL = URLUtil.URLUtil.CreatePath("outside-b.html");
 
         // Instantiates a new Driver
         private readonly IWebDriver _webDriver;

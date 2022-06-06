@@ -8,9 +8,9 @@ namespace ConjuringTests.URLUtil {
     }
 
     class HeaderNavigation {
-        public HeaderNavigation(...) {}
+        public HeaderNavigation() {}
 
-        public NavigateToSearch() {
+        public void NavigateToSearch() {
             _driver.Navigate().To(Urls.Search.CreatePath());
         }
     }

@@ -6,7 +6,7 @@ namespace ConjuringTests.Pages
     public class HomePageObject
     {
         // Builds the expected URL for the testing site homepage
-        private string _homepageURL = CreatePath("");
+        private string _homepageURL = URLUtil.CreatePath("");
 
         // Instantiates a new Driver
         private readonly IWebDriver _webDriver;

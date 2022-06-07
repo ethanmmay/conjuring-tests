@@ -1,5 +1,6 @@
 ﻿using ConjuringTests.Pages;
 using ConjuringTests.Drivers;
+using TechTalk.SpecFlow;
 namespace ConjuringTests.StepDefinitions
 {
     [Binding]

@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using ConjuringTests.URLUtil;
+using ConjuringTests.Utils;
 
 namespace ConjuringTests.Pages
 {

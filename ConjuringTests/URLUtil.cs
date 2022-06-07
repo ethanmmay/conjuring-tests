@@ -1,17 +1,15 @@
-namespace ConjuringTests.URLUtil {
-    public class URLUtil {
-        private string _baseUrl = "https://ethanmmay.github.io/conjuring-site";
+namespace ConjuringTests.Utils {
+    public static class URLUtil
+    {
+        private static string _baseUrl = "https://ethanmmay.github.io/conjuring-site";
   
-        public String CreatePath(this string subpath) {
+        public static string CreatePath(string subpath) {
             return $"{_baseUrl}/{subpath}";
         }
     }
 
     class HeaderNavigation {
-        public HeaderNavigation() {}
-
         public void NavigateToSearch() {
-            _driver.Navigate().To(Urls.Search.CreatePath());
         }
     }
 }

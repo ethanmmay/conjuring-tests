@@ -7,5 +7,5 @@ Scenario: Test Bedroom while Possessed
 	Given I am on conjuring site going towards BedroomB
 	When I click possession for going to BedroomB
 	When I click BedroomB
-	When I raise and lower slider 3 times
+	When I raise and lower slider
 	Then the slider is back at 0

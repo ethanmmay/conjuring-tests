@@ -1,6 +1,7 @@
 ﻿using ConjuringTests.Pages;
 using ConjuringTests.Drivers;
 using TechTalk.SpecFlow;
+using FluentAssertions;
 namespace ConjuringTests.StepDefinitions
 {
     [Binding]
@@ -56,7 +57,8 @@ namespace ConjuringTests.StepDefinitions
         [Then(@"the piano alert appears")]
         public void ThenThePianoAlertAppears()
         {
-            _basementPage.VerifyPianoAlertAppears();
+            Boolean alertAppears = _basementPage.VerifyPianoAlertAppears();
+            alertAppears.Should().BeTrue();
         }
     }
 }

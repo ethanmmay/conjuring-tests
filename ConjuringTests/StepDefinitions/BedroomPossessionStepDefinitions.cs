@@ -40,11 +40,9 @@ namespace ConjuringTests.StepDefinitions
         }
 
         // Moving range input to maximum and back 3 times
-        [When(@"I raise and lower slider 3 times")]
-        public void WhenIRaiseAndLowerSlider3Times()
+        [When(@"I raise and lower slider")]
+        public void WhenIRaiseAndLowerSlider()
         {
-            _bedroomBPage.RaiseAndLowerSlider();
-            _bedroomBPage.RaiseAndLowerSlider();
             _bedroomBPage.RaiseAndLowerSlider();
         }
 

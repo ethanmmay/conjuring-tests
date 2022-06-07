@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7y2YAVZGj0v62akwOLqRH7hPq9WrLEUbB9O7CjjS3SmgbFhyBEflIp1yX0ZKja2okf9bVGZpPCpU3vGKk7C3vg==",
+  "dgSpecHash": "jbePTUwxxxBJA9sIavzj6ZQMnO9BQ77knzWW9cMqPOFC4s6eibgEozVuQ/wCNCoT8wTm10zeto44SD/2pnoL+Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ethan\\Documents\\GitHub\\conjuring-tests\\ConjuringTests\\ConjuringTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ethan\\.nuget\\packages\\anglesharp\\0.16.1\\anglesharp.0.16.1.nupkg.sha512",
     "C:\\Users\\Ethan\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
+    "C:\\Users\\Ethan\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\Ethan\\.nuget\\packages\\fluentassertions\\6.7.0\\fluentassertions.6.7.0.nupkg.sha512",
     "C:\\Users\\Ethan\\.nuget\\packages\\gherkin\\19.0.3\\gherkin.19.0.3.nupkg.sha512",
     "C:\\Users\\Ethan\\.nuget\\packages\\microsoft.codecoverage\\17.2.0\\microsoft.codecoverage.17.2.0.nupkg.sha512",

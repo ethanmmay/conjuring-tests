@@ -1,6 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-
+using OpenQA.Selenium.Support.UI;
 namespace ConjuringTests.Pages
 {
     public class BasementPageObject
@@ -14,16 +14,16 @@ namespace ConjuringTests.Pages
             _webDriver = webDriver;
         }
 
-        // Locates image of piano on page using its class name, "pianoImage"
-        private IWebElement PianoImage => _webDriver.FindElement(By.ClassName("pianoImage"));
+        // Locates image of piano on page using it's img tag and it's onclick function, "piano(2)"
+        private IWebElement PianoImage => _webDriver.FindElement(By.XPath("//img[@onclick='piano(2)']"));
 
         // Moves position of the page to focus on the image of a piano
         public void ScrollDown()
         {
-            var piano = _webDriver.FindElement(By.ClassName("pianoImage"));
-            Actions actions = new(_webDriver); // This is the same as: Actions actions = new Actions(_webDriver);
-            actions.MoveToElement(piano);
-            actions.Perform();
+            // Waits until the piano image is loaded
+            new WebDriverWait(_webDriver, TimeSpan.FromSeconds(10)).Until(e => e.FindElement(By.XPath("//img[@onclick='piano(2)']")));
+            // Scrolls screen down to piano image
+            new Actions(_webDriver).MoveToElement(PianoImage).Perform();
         }
 
         // Clicks on the image of a piano
@@ -32,12 +32,18 @@ namespace ConjuringTests.Pages
             PianoImage.Click();
         }
 
-        // Accepts the alert that appears after clicking on the image of a piano
-        public void VerifyPianoAlertAppears()
+        // Waits to accept the alert that appears after clicking on the image of a piano
+        public Boolean VerifyPianoAlertAppears()
         {
-            Thread.Sleep(3000);
-            _webDriver.SwitchTo().Alert().Accept();
-            Thread.Sleep(2000);
+            WebDriverWait wait = new WebDriverWait(_webDriver, TimeSpan.FromSeconds(10));
+            wait.IgnoreExceptionTypes(typeof(NoAlertPresentException));
+            IAlert alert = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent());
+            if (alert != null)
+            {
+                _webDriver.SwitchTo().Alert().Accept();
+                return true;
+            }
+            return false;
         }
     }
 }

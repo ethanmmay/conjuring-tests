@@ -1,4 +1,5 @@
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace ConjuringTests.Pages
 {
@@ -13,21 +14,21 @@ namespace ConjuringTests.Pages
             _webDriver = webDriver;
         }
 
-        // Locates range input using it's assigned name, "wardrobeBump"
-        private IWebElement slider => _webDriver.FindElement(By.Name("wardrobeBump"));
+        // Locates range input using it's input tag and it's attribute, "type"
+        private IWebElement slider => _webDriver.FindElement(By.XPath("//input[@type='range']"));
 
         // Sends arrow key inputs to the slider to raise it to 5 and lower it back down to 0
         public void RaiseAndLowerSlider()
         {
-            for(int i = 0; i < 5; i++)
+            // Waits until the slider is loaded
+            new WebDriverWait(_webDriver, TimeSpan.FromSeconds(10)).Until(e => e.FindElement(By.XPath("//input[@type='range']")));
+            while (slider.GetAttribute("value") != "5") 
             {
                 slider.SendKeys(Keys.ArrowRight);
-                Thread.Sleep(100);
             }
-            for (int i = 0; i < 5; i++)
+            while (slider.GetAttribute("value") != "0")
             {
                 slider.SendKeys(Keys.ArrowLeft);
-                Thread.Sleep(100);
             }
         }
 

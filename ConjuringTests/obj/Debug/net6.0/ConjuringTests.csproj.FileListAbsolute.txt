@@ -118,3 +118,4 @@ C:\Users\Ethan\Documents\GitHub\conjuring-tests\ConjuringTests\obj\Debug\net6.0\
 C:\Users\Ethan\Documents\GitHub\conjuring-tests\ConjuringTests\obj\Debug\net6.0\ConjuringTests.pdb
 C:\Users\Ethan\Documents\GitHub\conjuring-tests\ConjuringTests\obj\Debug\net6.0\ConjuringTests.genruntimeconfig.cache
 C:\Users\Ethan\Documents\GitHub\conjuring-tests\ConjuringTests\obj\Debug\net6.0\ref\ConjuringTests.dll
+C:\Users\Ethan\Documents\GitHub\conjuring-tests\ConjuringTests\bin\Debug\net6.0\SeleniumExtras.WaitHelpers.dll

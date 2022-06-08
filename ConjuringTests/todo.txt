@@ -1,7 +1,6 @@
 ~~ Core Goals ~~
 
 Create Components for elements
-Clean Up & Comment Code (Commented for first time on 6/3/2022)
 
 
 ~~ Abstract Goals ~~
@@ -12,8 +11,7 @@ More interesting tests that show cool widgets being tested
 
 ~~ Tasks ~~
 
-i. Convert hard waits (Thread.Sleep()) to deterministic waits (ImplicitlyWait())
-ii. Move String literals to a new defined constants file
+i. Turn elements into Components
 
 ~~ Completed Tasks ~~
 
@@ -23,3 +21,4 @@ iii. Create a URL util for storing less data within classes
 iv. Verify page url using URLUtil when entering Bedroom or Basement pages
 v. Remove "global" from using imports
 vi. Optimize RaiseAndLowerSlider()
+vii. Convert hard waits (Thread.Sleep()) to deterministic waits (ImplicitlyWait())

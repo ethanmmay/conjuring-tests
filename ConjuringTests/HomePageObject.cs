@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using ConjuringTests.Utils;
+using OpenQA.Selenium.Support.UI;
 
 namespace ConjuringTests.Pages
 {
@@ -14,13 +15,7 @@ namespace ConjuringTests.Pages
             _webDriver = webDriver;
         }
 
-        private IWebElement PossessionButton => _webDriver.FindElement(By.ClassName("possessButton"));
-
-        private IWebElement BasementLink => _webDriver.FindElement(By.LinkText("Basement"));
-        
-        private IWebElement OutsideLink => _webDriver.FindElement(By.LinkText("Outside"));
-        
-        private IWebElement BedroomLink => _webDriver.FindElement(By.LinkText("Bedroom"));
+        private IWebElement PossessionButton => _webDriver.FindElement(By.ClassName("btn-danger"));
 
         public void VerifyAtHomePage()
         {
@@ -35,24 +30,16 @@ namespace ConjuringTests.Pages
             PossessionButton.Click();
         }
 
-        public void NavigateToBasement()
+        public Boolean NavigateToPage(string searchKeyword, string subpath)
         {
-            BasementLink.Click();
-        }
-
-        public void NavigateToOutside()
-        {
-            OutsideLink.Click();
-        }
-
-        public void NavigateToBedroomG()
-        {
-            BedroomLink.Click();
-        }
-
-        public void NavigateToBedroomB()
-        {
-            BedroomLink.Click();
+            new WebDriverWait(_webDriver, TimeSpan.FromSeconds(10)).Until(e => e.FindElement(By.LinkText(searchKeyword)));
+            _webDriver.FindElement(By.LinkText(searchKeyword)).Click();
+            string newUrl = URLUtil.CreatePath(subpath);
+            if (_webDriver.Url != newUrl)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

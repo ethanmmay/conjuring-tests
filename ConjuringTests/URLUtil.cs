@@ -9,7 +9,8 @@ namespace ConjuringTests.Utils {
     }
 
     class HeaderNavigation {
-        public void NavigateToSearch() {
+        public void NavigateTo(string searchKeyword) {
+
         }
     }
 }

@@ -14,7 +14,6 @@ namespace ConjuringTests.Pages
 
         private IWebElement weightInput => _webDriver.FindElement(By.XPath("//input[@type='number']"));
         private IWebElement submitButton => _webDriver.FindElement(By.XPath("//input[@onclick='fall()']"));
-        private IWebElement bedroomButton => _webDriver.FindElement(By.XPath("//a[@class='linkText']"));
         private IWebElement resultsText => _webDriver.FindElement(By.XPath("//h6[@class='text-danger']"));
 
         public Boolean ClickWardrobeAndAlert()

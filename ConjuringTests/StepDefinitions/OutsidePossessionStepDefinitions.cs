@@ -31,7 +31,7 @@ namespace ConjuringTests.StepDefinitions
         [When(@"I click Outside")]
         public void WhenIClickOutside()
         {
-            _homePage.NavigateToOutside();
+            _homePage.NavigateToPage("Outside", "outside-b.html").Should().BeTrue();
         }
 
         [When(@"I click 20 crows")]

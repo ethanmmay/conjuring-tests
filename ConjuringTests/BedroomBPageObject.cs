@@ -12,24 +12,24 @@ namespace ConjuringTests.Pages
             _webDriver = webDriver;
         }
 
-        private IWebElement slider => _webDriver.FindElement(By.XPath("//input[@type='range']"));
+        private IWebElement Slider => _webDriver.FindElement(By.XPath("//input[@type='range']"));
 
         public void RaiseAndLowerSlider()
         {
             new WebDriverWait(_webDriver, TimeSpan.FromSeconds(10)).Until(e => e.FindElement(By.XPath("//input[@type='range']")));
-            while (slider.GetAttribute("value") != "5") 
+            while (Slider.GetAttribute("value") != "5") 
             {
-                slider.SendKeys(Keys.ArrowRight);
+                Slider.SendKeys(Keys.ArrowRight);
             }
-            while (slider.GetAttribute("value") != "0")
+            while (Slider.GetAttribute("value") != "0")
             {
-                slider.SendKeys(Keys.ArrowLeft);
+                Slider.SendKeys(Keys.ArrowLeft);
             }
         }
 
         public String GetSliderValue()
         {
-            return slider.GetAttribute("value");
+            return Slider.GetAttribute("value");
         }
     }
 }

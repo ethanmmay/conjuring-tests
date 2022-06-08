@@ -27,7 +27,7 @@ namespace ConjuringTests.Pages
         public Boolean VerifyPianoAlertAppears()
         {
             // Waiting for Alert
-            WebDriverWait wait = new WebDriverWait(_webDriver, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new(_webDriver, TimeSpan.FromSeconds(10));
             wait.IgnoreExceptionTypes(typeof(NoAlertPresentException));
             IAlert alert = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent());
             if (alert != null)

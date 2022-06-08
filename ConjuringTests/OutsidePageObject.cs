@@ -12,22 +12,22 @@ namespace ConjuringTests.Pages
             _webDriver = webDriver;
         }
 
-        private IWebElement crow => _webDriver.FindElement(By.XPath("//img[@onclick='possessCrow()']"));
+        private IWebElement Crow => _webDriver.FindElement(By.XPath("//img[@onclick='possessCrow()']"));
 
-        private IWebElement crowCounter => _webDriver.FindElement(By.XPath("//span"));
+        private IWebElement CrowCounter => _webDriver.FindElement(By.XPath("//span"));
 
         public void Click20Crows()
         {
             new WebDriverWait(_webDriver, TimeSpan.FromSeconds(10)).Until(e => e.FindElement(By.XPath("//img[@onclick='possessCrow()']")));
-            while (crowCounter.Text != "20")
+            while (CrowCounter.Text != "20")
             {
-                crow.Click();
+                Crow.Click();
             }
         }
 
         public String GetCrowCount()
         {
-            return crowCounter.Text;
+            return CrowCounter.Text;
         }
     }
 }

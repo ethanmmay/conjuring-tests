@@ -2,10 +2,10 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 namespace ConjuringTests.Drivers
 {
-    public class BrowserDriver : IDisposable
+    public class BrowserDriver // : IDisposable
     {
         private readonly Lazy<IWebDriver> _currentWebDriverLazy;
-        private bool _isDisposed;
+        // private bool _isDisposed;
 
         public BrowserDriver()
         {
@@ -25,6 +25,8 @@ namespace ConjuringTests.Drivers
             var chromeDriver = new ChromeDriver(chromeDriverService, chromeOptions);
             return chromeDriver;
         }
+
+        /*
         public void Dispose()
         {
             if (_isDisposed)
@@ -39,5 +41,6 @@ namespace ConjuringTests.Drivers
 
             _isDisposed = true;
         }
+        */
     }
 }

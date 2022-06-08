@@ -6,7 +6,7 @@ namespace ConjuringTests.Pages
 {
     public class HomePageObject
     {
-        private string _homepageURL = URLUtil.CreatePath("");
+        private readonly string _homepageURL = URLUtil.CreatePath("");
 
         private readonly IWebDriver _webDriver;
 

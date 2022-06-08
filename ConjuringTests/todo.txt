@@ -21,4 +21,4 @@ iii. Create a URL util for storing less data within classes
 iv. Verify page url using URLUtil when entering Bedroom or Basement pages
 v. Remove "global" from using imports
 vi. Optimize RaiseAndLowerSlider()
-vii. Convert hard waits (Thread.Sleep()) to deterministic waits (ImplicitlyWait())
+vii. Convert hard waits (Thread.Sleep()) to deterministic waits (Explicit Waits)

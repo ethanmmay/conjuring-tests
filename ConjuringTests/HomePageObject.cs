@@ -30,7 +30,7 @@ namespace ConjuringTests.Pages
             PossessionButton.Click();
         }
 
-        public Boolean NavigateToPage(string searchKeyword, string subpath)
+        public Boolean NavigateToPageAndConfirm(string searchKeyword, string subpath)
         {
             new WebDriverWait(_webDriver, TimeSpan.FromSeconds(10)).Until(e => e.FindElement(By.LinkText(searchKeyword)));
             _webDriver.FindElement(By.LinkText(searchKeyword)).Click();

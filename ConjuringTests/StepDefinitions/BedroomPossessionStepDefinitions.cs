@@ -31,7 +31,7 @@ namespace ConjuringTests.StepDefinitions
         [When(@"I click BedroomB")]
         public void WhenIClickBedroomB()
         {
-            _homePage.NavigateToPage("Bedroom", "bedroom-b.html").Should().BeTrue();
+            _homePage.NavigateToPageAndConfirm("Bedroom", "bedroom-b.html").Should().BeTrue();
         }
 
         [When(@"I raise and lower slider")]

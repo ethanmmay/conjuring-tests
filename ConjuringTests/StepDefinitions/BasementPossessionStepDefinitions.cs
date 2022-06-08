@@ -31,7 +31,7 @@ namespace ConjuringTests.StepDefinitions
         [When(@"I click Basement")]
         public void WhenIClickBasement()
         {
-            _homePage.NavigateToPage("Basement", "basement-b.html").Should().BeTrue();
+            _homePage.NavigateToPageAndConfirm("Basement", "basement-b.html").Should().BeTrue();
         }
 
         [When(@"I scroll down")]

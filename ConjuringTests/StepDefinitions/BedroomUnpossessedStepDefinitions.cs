@@ -25,7 +25,7 @@ namespace ConjuringTests.StepDefinitions
         [When(@"I click BedroomG")]
         public void WhenIClickBedroomG()
         {
-            _homePage.NavigateToPage("Bedroom", "bedroom-g.html").Should().BeTrue();
+            _homePage.NavigateToPageAndConfirm("Bedroom", "bedroom-g.html").Should().BeTrue();
         }
 
         [When(@"I click on wardrobe and alert")]
@@ -45,7 +45,7 @@ namespace ConjuringTests.StepDefinitions
         public void WhenIRepeatStepsAndEnterHighWeight()
         {
             _homePage.VerifyAtHomePage();
-            _homePage.NavigateToPage("Bedroom", "bedroom-g.html").Should().BeTrue();
+            _homePage.NavigateToPageAndConfirm("Bedroom", "bedroom-g.html").Should().BeTrue();
             _bedroomGPage.RepeatStepsAndEnterHighWeight(120);
         }
 

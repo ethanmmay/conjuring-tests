@@ -1,5 +1,5 @@
 ## Welcome to Conjuring Tests
-### This repository is for automated tests created with C# Selenium, SpecFLow and a Page-Object-Model design pattern.
+### This repository is for automated tests created with C# Selenium, SpecFlow and a Page-Object-Model design pattern.
 
 You can run these tests yourself if you have Git SCM and Visual Studio installed on your computer, and you follow these next steps.
 

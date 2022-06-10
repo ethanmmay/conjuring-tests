@@ -17,7 +17,7 @@ namespace ConjuringTests.Pages
 
         private IWebElement PossessionButton => _webDriver.FindElement(By.ClassName("btn-danger"));
 
-        public void VerifyAtHomePage()
+        public void GoToHomePage()
         {
             if (_webDriver.Url != _homepageURL)
             {

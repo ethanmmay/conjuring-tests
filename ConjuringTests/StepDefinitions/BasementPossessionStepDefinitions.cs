@@ -19,7 +19,7 @@ namespace ConjuringTests.StepDefinitions
         [Given(@"I am on conjuring site going towards Basement")]
         public void GivenIAmOnConjuringSite()
         {
-            _homePage.VerifyAtHomePage();
+            _homePage.GoToHomePage();
         }
 
         [When(@"I click possession for going to Basement")]
@@ -49,7 +49,7 @@ namespace ConjuringTests.StepDefinitions
         [Then(@"the piano alert appears")]
         public void ThenThePianoAlertAppears()
         {
-            Boolean alertAppears = _basementPage.VerifyPianoAlertAppears();
+            Boolean alertAppears = _basementPage.ClickPianoAlert();
             alertAppears.Should().BeTrue();
         }
     }

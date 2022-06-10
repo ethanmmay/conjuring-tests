@@ -24,7 +24,7 @@ namespace ConjuringTests.Pages
             PianoImage.Click();
         }
 
-        public Boolean VerifyPianoAlertAppears()
+        public Boolean ClickPianoAlert()
         {
             // Waiting for Alert
             WebDriverWait wait = new(_webDriver, TimeSpan.FromSeconds(10));

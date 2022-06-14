@@ -19,7 +19,7 @@ namespace ConjuringTests.StepDefinitions
         [Given(@"I am on conjuring site going towards BedroomG")]
         public void GivenIAmOnConjuringSite3()
         {
-            _homePage.VerifyAtHomePage();
+            _homePage.GoToHomePage();
         }
 
         [When(@"I click BedroomG")]

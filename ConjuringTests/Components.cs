@@ -8,17 +8,28 @@ using TechTalk.SpecFlow;
 
 namespace ConjuringTests.Components
 {
-    public class Component
+    public class BaseComponent
     {
         private readonly IWebDriver _webDriver;
 
-        public Component(IWebDriver webDriver)
+        public BaseComponent(By locator)
         {
-            _webDriver = webDriver;
+
         }
+
+        
+
         public IWebElement FindElement(By locator)
         {
             return _webDriver.FindElement(locator);
+        }
+    }
+
+    class Button : BaseComponent
+    {
+        public Button(By locator, string elementName)
+        {
+
         }
     }
 }

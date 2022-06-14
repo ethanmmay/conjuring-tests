@@ -1,6 +1,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
+using ConjuringTests.Components;
 namespace ConjuringTests.Pages
 {
     public class BasementPageObject
@@ -21,6 +22,7 @@ namespace ConjuringTests.Pages
 
         public void ClickPiano()
         {
+            
             PianoImage.Click();
         }
 

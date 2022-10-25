@@ -46,27 +46,27 @@
             },
             "FluentAssertions": {
               "target": "Package",
-              "version": "[6.7.0, )"
+              "version": "[6.8.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.2.0, )"
+              "version": "[17.3.2, )"
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.5.1, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.5.1, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[102.0.5005.6102, )"
+              "version": "[106.0.5249.6100, )"
             },
             "Selenium.WebDriver.IEDriver": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.5.0, )"
             },
             "SpecFlow": {
               "target": "Package",
@@ -82,11 +82,11 @@
             },
             "WebDriverManager": {
               "target": "Package",
-              "version": "[2.13.0, )"
+              "version": "[2.16.0, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.1, )"
+              "version": "[2.4.2, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

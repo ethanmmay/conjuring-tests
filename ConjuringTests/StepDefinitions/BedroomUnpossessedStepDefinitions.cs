@@ -44,7 +44,7 @@ namespace ConjuringTests.StepDefinitions
         [When(@"I repeat steps and enter high weight")]
         public void WhenIRepeatStepsAndEnterHighWeight()
         {
-            _homePage.VerifyAtHomePage();
+            _homePage.GoToHomePage();
             _homePage.NavigateToPageAndConfirm("Bedroom", "bedroom-g.html").Should().BeTrue();
             _bedroomGPage.RepeatStepsAndEnterHighWeight(120);
         }

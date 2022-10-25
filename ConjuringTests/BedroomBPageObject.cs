@@ -31,5 +31,12 @@ namespace ConjuringTests.Pages
         {
             return Slider.GetAttribute("value");
         }
+
+        public String SliderBackAt0()
+        {
+            String val = Slider.GetAttribute("value");
+            _webDriver.Quit();
+            return val;
+        }
     }
 }

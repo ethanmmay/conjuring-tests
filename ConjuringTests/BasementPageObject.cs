@@ -1,7 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
-using ConjuringTests.Components;
 namespace ConjuringTests.Pages
 {
     public class BasementPageObject
@@ -35,6 +34,7 @@ namespace ConjuringTests.Pages
             if (alert != null)
             {
                 _webDriver.SwitchTo().Alert().Accept();
+                _webDriver.Quit();
                 return true;
             }
             return false;

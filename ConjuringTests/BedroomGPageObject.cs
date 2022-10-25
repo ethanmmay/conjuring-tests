@@ -56,7 +56,9 @@ namespace ConjuringTests.Pages
 
         public String GetWeightFormResultsText()
         {
-            return ResultsText.Text;
+            String resultsText = ResultsText.Text;
+            _webDriver.Quit();
+            return resultsText;
         }
     }
 }

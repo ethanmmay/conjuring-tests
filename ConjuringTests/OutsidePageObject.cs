@@ -27,7 +27,9 @@ namespace ConjuringTests.Pages
 
         public String GetCrowCount()
         {
-            return CrowCounter.Text;
+            String crowCount = CrowCounter.Text;
+            _webDriver.Quit();
+            return crowCount;
         }
     }
 }

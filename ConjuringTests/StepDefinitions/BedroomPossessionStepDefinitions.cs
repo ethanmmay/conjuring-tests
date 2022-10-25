@@ -43,7 +43,7 @@ namespace ConjuringTests.StepDefinitions
         [Then(@"the slider is back at 0")]
         public void ThenTheSliderIsBackAt0()
         {
-            String sliderValue = _bedroomBPage.GetSliderValue();
+            String sliderValue = _bedroomBPage.SliderBackAt0();
             sliderValue.Should().Be("0");
         }
 
